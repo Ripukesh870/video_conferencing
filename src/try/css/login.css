@@ -1,0 +1,46 @@
+.Login{
+    /* background: red; */
+    text-align: center;
+    /* font-size: 35px; */
+
+}
+.Login .heading{
+    font-size: 4rem;
+}
+.Login label{
+    font-size: 2.3rem;
+}
+.Login input{
+    color: black ;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: rgb(225, 225, 241);
+}
+.Login form{
+    margin: 30px;
+    padding: 50px
+}
+.Login .btn{
+    margin-top: 1.6rem;
+    border: 2px solid gray;
+    background: white;
+    width: 8rem;
+    border-radius: 20px;
+    margin-left: .5em;
+    margin-right: .5em;
+    background-color: #948c8c;
+}
+.Login .for{
+    margin-top:"3px";
+    font-size: 1rem;
+    color: rgb(50, 56, 61);
+}
+.btn:hover{
+    background: #655d5d;
+    color: white;
+}
+.reg:hover{
+    /* background: #655d5d; */
+    color: white;
+}

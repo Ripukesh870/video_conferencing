@@ -1,0 +1,33 @@
+.policy{
+    width: 990px;
+    margin:2em auto;
+    margin-bottom: 5%;
+}
+li{
+    font-size: 1.2em;
+    margin:2em auto;
+}
+@media screen and (max-width:1100px) {
+    .policy{
+        width:70%;
+        margin: 1em auto;
+        margin-bottom: 20%;
+
+    }
+}
+@media screen and (max-width:460px) {
+    .policy{
+        width:70%;
+        margin: 1em auto;
+        margin-bottom: 30%;
+
+    }
+}
+@media screen and (max-width:330px) {
+    .policy{
+        width:70%;
+        margin: 1em auto;
+        margin-bottom: 35%;
+
+    }
+}

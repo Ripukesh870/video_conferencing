@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-style: italic;
+}
+.validation{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    box-sizing: border-box;
+}
+.form{
+    /* background: rgb(148, 126, 126); */
+    width: 40vw;
+    max-height: 80vh;
+    /* border: 2px solid red; */
+    margin: 0px auto;
+    /* text-align: left; */
+    /* padding-top: 5vh;  */
+    padding-left: 5vw;
+}
+ .input{
+    width: 30vw;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 20px;
+    padding: 2px 1em;
+    background-color: rgb(178, 193, 193);
+}
+.validation .span{
+    color: rgb(181, 8, 8);
+    margin-top: -3px;
+    /* padding-right: 18em; */
+}
+.label{
+    color: rgb(0, 0, 0);
+    /* margin-top: -3px; */
+    font-style: normal;
+    font-weight: bold;
+    padding-left: 1em;
+}
+.validation .button{
+    width: 15vw;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 1em;
+    color: white;
+    background-color: rgb(61, 78, 63);
+    margin-bottom: 5rem;
+}
+.validation .button:hover{
+    background: rgb(43, 147, 46);
+    
+}
