@@ -1,11 +1,11 @@
-export const addData = (data) => {
-    return {
-        type: "LOGIN",
-        playload: {
-            data: data
-        }
-    }
-}
+// export const addData = (data) => {
+//     return {
+//         type: "LOGIN",
+//         playload: {
+//             data: data
+//         }
+//     }
+// }
 
 
 // export const login = () => {
@@ -20,3 +20,15 @@ export const logout = () => {
     }
 }
 
+export const addData = (data) => {
+    return {
+        type: "LOGIN"
+    }
+}
+
+export const Singup=(data)=>{
+    return {
+        type:"SINGUP",
+        payload:data
+    }
+}

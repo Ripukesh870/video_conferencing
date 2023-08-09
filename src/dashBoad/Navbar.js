@@ -66,11 +66,9 @@ const navItems1 = [
 
 
 function Navbar(props) {
-  // const alert=0;
 
   const { window } = props;
   const Data=useSelector((state)=>state.LoginReducer);
-  
 
   console.log(Data);
   // const [login,setlogin]=useState(1);
@@ -82,7 +80,6 @@ function Navbar(props) {
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
-
 
 
   const drawer = (
@@ -102,7 +99,7 @@ function Navbar(props) {
              ))
             }
           </List> : <List>
-          {/* <Avatar>R</Avatar> */}
+          <Avatar>R</Avatar>
           {
             navItems1.map((item) => (
             <ListItem key={item} disablePadding style={{margin:0}}>
@@ -187,6 +184,12 @@ function Navbar(props) {
 
 
 export default Navbar;
+
+
+
+
+
+
 
 /*
 <ButtonGroup>

@@ -6,50 +6,55 @@ import { useDispatch } from 'react-redux';
 import { addData } from './redux/action/Action';
 import { useSelector } from 'react-redux';
 function Login() {
-// const data={
-//     name:"Ripukesh870",
-//     password:"Ripu870@@@"
-// }
-// const [user,setuser]=useState("");
-// const [pass,setpass]=useState("");
+const data={
+    name:"Ripukesh870",
+    password:"Ripu870@@@"
+}
+const [user,setuser]=useState("");
+const [pass,setpass]=useState("");
 
-const [Login_data,setLogin_data]=useState({
-  name:"",
-  password:"",
-})
-const navidate= useNavigate();
+// const [Login_data,setLogin_data]=useState({
+//   name:"",
+//   password:""
+// })
+
+
+const Navigate= useNavigate();
 const Dispatch = useDispatch();
-const Data=useSelector((state)=>state.LoginReducer.user);
+const Data=useSelector((state)=>state.LoginReducer);
 console.log(Data);
 
 
 const hendleUser=(e)=>{
-    setLogin_data.name(e.target.value)
+  console.log(e.target.value);
+  setuser(e.target.value);
 }
+
 const hendlePass=(e)=> 
 {
-    // setpass(e.target.value);
-    setLogin_data.password(e.target.value)
-
+    console.log(e.target.value);
+    setpass(e.target.value)
 }
+
+
 const handleLogin=()=>{
-  if(Login_data.name===Data.name && Login_data.password===Data.password)
+  if(data.name===user && data.password===pass)
   {
     Dispatch(addData());
     console.log("open new page");
-    navidate('/');
+    Navigate('/');
     console.log(Data);
-
   }
   else
   {
-    alert("not math username or password");
+    alert("not match username or password");
   }
 }
-// const forget=()=>{
-//   navidate('/forget');
+
+const forget=()=>{
+  Navigate('/forget');
   
-// }
+}
   return (
     <section className='Login' >
       <form action="">

@@ -1,0 +1,21 @@
+.App{
+    text-align: center;
+
+}
+.mydiv{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 7%;
+    box-shadow: 1px 1px 5px gray;
+    padding:10px;
+}
+.mydiv input{
+    border: 2px solid black;
+    width: 70%;
+}
+.mydiv span{
+    /* border: 2px solid black; */
+    font-size: 30px;
+    padding-top: 5px;
+    height: 55px;
+}
