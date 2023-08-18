@@ -1,0 +1,186 @@
+body{
+    justify-content: center;
+
+    /* align-items: center; */
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+.body {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* height: 100vh; */
+    /* margin: 0; */
+    background-color: #f2f2f2;
+}
+.f{
+    top: 90px;
+    height: 500px;
+    width: 3px;
+    border: 2px solid black;
+    position: relative;
+}
+
+.flag {
+    top: 100px;
+    width: 300px;
+    height: 200px;
+    position: relative;
+}
+.saffron{
+    background-color: #FF9933;
+    height: 33.33%;
+}
+.white{
+    background-color: white;
+    height: 33.33%;
+}
+.green{
+    background-color: #138808;
+    height: 33.33%;
+}
+
+.chakra {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: calc(49% - 30px);
+    left: calc(50% - 30px);
+    background: #cfc9c9;
+    border-radius: 50%;
+    border: 2px solid blue;
+    rotate: 360deg;
+}
+
+.spoke {
+    position: absolute;
+    width: 1px;
+    height: 30.2px;
+    background: blue;
+    top: 0%;
+    left: 49.322%;
+    transform-origin: 50% 100%;
+}
+
+.spoke:nth-child(1) {
+    transform: rotate(15deg);
+}
+
+.spoke:nth-child(2) {
+    transform: rotate(30deg);
+}
+
+.spoke:nth-child(3) {
+    transform: rotate(45deg);
+}
+
+.spoke:nth-child(4) {
+    transform: rotate(60deg);
+}
+
+.spoke:nth-child(5) {
+    transform: rotate(75deg);
+}
+
+.spoke:nth-child(6) {
+    transform: rotate(90deg);
+}
+
+.spoke:nth-child(7) {
+    transform: rotate(105deg);
+}
+.spoke:nth-child(8) {
+    transform: rotate(120deg);
+}
+.spoke:nth-child(9) {
+    transform: rotate(135deg);
+}
+
+.spoke:nth-child(10) {
+    transform: rotate(150deg);
+}
+
+.spoke:nth-child(11) {
+    transform: rotate(165deg);
+}
+
+.spoke:nth-child(12) {
+    transform: rotate(180deg);
+}
+
+.spoke:nth-child(13) {
+    transform: rotate(195deg);
+}
+
+.spoke:nth-child(14) {
+    transform: rotate(210deg);
+}
+
+.spoke:nth-child(15) {
+    transform: rotate(225deg);
+}
+.spoke:nth-child(16) {
+    transform: rotate(240deg);
+}
+.spoke:nth-child(17) {
+    transform: rotate(255deg);
+}
+
+.spoke:nth-child(18) {
+    transform: rotate(270deg);
+}
+
+.spoke:nth-child(19) {
+    transform: rotate(285deg);
+}
+
+.spoke:nth-child(20) {
+    transform: rotate(300deg);
+}
+
+.spoke:nth-child(21) {
+    transform: rotate(315deg);
+}
+
+.spoke:nth-child(22) {
+    transform: rotate(330deg);
+}
+
+.spoke:nth-child(23) {
+    transform: rotate(345deg);
+}
+.spoke:nth-child(24) {
+    transform: rotate(360deg);
+}
+
+/* ... Add spokes for the rest of the angles ... */
+.base{
+    position: relative;
+    /* border: 2px solid red; */
+    width: 400px;
+    margin: 5.2% 29.3%;
+}
+.base1{
+    width: 100px;
+    margin: 0 auto;
+    height: 13px;
+    border: 2px solid black;
+    border-bottom: none;
+    background-color: #FF9933;
+}
+.base2{
+    width: 200px;
+    border: 2px solid black;
+    height: 13px;
+    margin: 0 auto;
+    border-bottom: none;
+    background-color: white;
+}
+.base3{
+    width: 300px;
+    height: 13px;
+    border: 2px solid black;
+    margin: 0 auto;
+    background-color: #138808;
+}
