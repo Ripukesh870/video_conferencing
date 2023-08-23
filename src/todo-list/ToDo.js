@@ -1,7 +1,21 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { AddToDo,RemoveToDo,ClearAll } from './store/TodoSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import DeleteIcon from "@mui/icons-material/Delete";
+
+
+// to get the data from localstorage 
+const getLocalItems=()=>{
+  let list = localStorage.getItems("data");
+  console.log(list);
+  if(list){
+    return JSON.parse(localStorage.getItem("list"));
+  }
+  else {
+    return [];
+  }
+}
+
 
 function ToDo() {
 
@@ -21,6 +35,18 @@ function ToDo() {
     const clear=()=>{
       dispatch(ClearAll());
     }
+
+
+
+
+    // add data to localStorage
+    useEffect(()=>{
+        localStorage.dispatch(AddToDo('lists',JSON.stringify(data)));
+    },[data])
+
+
+
+
   return (
     <div className='container' style={{width:"98vw",height:"96vh",boxSizing:""}}>
 
